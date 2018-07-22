@@ -39,23 +39,25 @@ print()
 draw_grid(grid, width=3, path=reconstruct_path(came_from, start=start, finish=finish), start=start, finish=finish)
 # output:
 '''
->  >  >  >  B
-.  #  #  #  ^
->  >  >  >  ^
->  ^  ^  #  ^
-.  A  .  .  .
 
-4  3  2  1  B
-.  #  #  #  1
-6  5  4  3  2
-7  6  5  #  3
-.  A  .  .  .
+.  .  .  .  B
+.  #  #  #  v
+>  v  <  <  <
+>  v  <  #  ^
+>  A  <  <  <
+
+.  .  .  .  B
+.  #  #  #  6
+3  2  3  4  5
+2  1  2  #  6
+1  A  1  2  3
 
 .  .  .  .  B
 .  #  #  #  *
 .  *  *  *  *
 .  *  .  #  .
 .  A  .  .  .
+
 ''' 
 
 ```
